@@ -1,0 +1,33 @@
+2023-11-29T11:07:50+00:00 CRITICAL Uncaught Error: Failed opening required 'D:\Web\PHP\wordpress\wp-content\plugins\google-listings-and-ads/src/Logging/DebugLogger.php' (include_path='.;D:/laragon/etc/php/pear') in D:\Web\PHP\wordpress\wp-content\plugins\jetpack\vendor\jetpack-autoloader\class-php-autoloader.php:90
+Stack trace:
+#0 [internal function]: Automattic\Jetpack\Autoloader\jpf11009ded9fc4592b6a05b61ce272b3c_jetpackⓥ12_8_1\al2_12_0\PHP_Autoloader::load_class('Automattic\\WooC...')
+#1 D:\Web\PHP\wordpress\wp-content\plugins\google-listings-and-ads\src\Internal\DependencyManagement\AbstractServiceProvider.php(119): class_implements('Automattic\\WooC...')
+#2 D:\Web\PHP\wordpress\wp-content\plugins\google-listings-and-ads\src\Internal\DependencyManagement\CoreServiceProvider.php(221): Automattic\WooCommerce\GoogleListingsAndAds\Internal\DependencyManagement\AbstractServiceProvider->conditionally_share_with_tags('Automattic\\WooC...')
+#3 D:\Web\PHP\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\ServiceProvider\ServiceProviderAggregate.php(102): Automattic\WooCommerce\GoogleListingsAndAds\Internal\DependencyManagement\CoreServiceProvider->register()
+#4 D:\Web\PHP\wordpress\wp-content\plugins\google-listings-and-ads\vendor\league\container\src\Container.php(172): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\ServiceProvider\ServiceProviderAggregate->register('Automattic\\WooC...')
+#5 D:\Web\PHP\wordpress\wp-content\plugins\google-listings-and-ads\src\Container.php(90): Automattic\WooCommerce\GoogleListingsAndAds\Vendor\League\Container\Container->get('Automattic\\WooC...')
+#6 D:\Web\PHP\wordpress\wp-content\plugins\google-listings-and-ads\src\Infrastructure\GoogleListingsAndAdsPlugin.php(136): Automattic\WooCommerce\GoogleListingsAndAds\Container->get('Automattic\\WooC...')
+#7 D:\Web\PHP\wordpress\wp-content\plugins\google-listings-and-ads\src\Infrastructure\GoogleListingsAndAdsPlugin.php(96): Automattic\WooCommerce\GoogleListingsAndAds\Infrastructure\GoogleListingsAndAdsPlugin->maybe_register_services()
+#8 D:\Web\PHP\wordpress\wp-includes\class-wp-hook.php(324): Automattic\WooCommerce\GoogleListingsAndAds\Infrastructure\GoogleListingsAndAdsPlugin->Automattic\WooCommerce\GoogleListingsAndAds\Infrastructure\{closure}('')
+#9 D:\Web\PHP\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#10 D:\Web\PHP\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 D:\Web\PHP\wordpress\wp-settings.php(506): do_action('plugins_loaded')
+#12 D:\Web\PHP\wordpress\wp-config.php(96): require_once('D:\\Web\\PHP\\word...')
+#13 D:\Web\PHP\wordpress\wp-load.php(50): require_once('D:\\Web\\PHP\\word...')
+#14 D:\Web\PHP\wordpress\wp-login.php(12): require('D:\\Web\\PHP\\word...')
+#15 {main}
+  thrown in D:\Web\PHP\wordpress\wp-content\plugins\jetpack\vendor\jetpack-autoloader\class-php-autoloader.php on line 90
+
+2023-11-29T11:08:41+00:00 CRITICAL Uncaught Error: Class "Automattic\WooCommerce\Pinterest\PluginUpdate" not found in D:\Web\PHP\wordpress\wp-content\plugins\pinterest-for-woocommerce\class-pinterest-for-woocommerce.php:427
+Stack trace:
+#0 D:\Web\PHP\wordpress\wp-includes\class-wp-hook.php(324): Pinterest_For_Woocommerce->maybe_update_plugin('')
+#1 D:\Web\PHP\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 D:\Web\PHP\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 D:\Web\PHP\wordpress\wp-settings.php(643): do_action('init')
+#4 D:\Web\PHP\wordpress\wp-config.php(96): require_once('D:\\Web\\PHP\\word...')
+#5 D:\Web\PHP\wordpress\wp-load.php(50): require_once('D:\\Web\\PHP\\word...')
+#6 D:\Web\PHP\wordpress\wp-blog-header.php(13): require_once('D:\\Web\\PHP\\word...')
+#7 D:\Web\PHP\wordpress\index.php(17): require('D:\\Web\\PHP\\word...')
+#8 {main}
+  thrown in D:\Web\PHP\wordpress\wp-content\plugins\pinterest-for-woocommerce\class-pinterest-for-woocommerce.php on line 427
+
